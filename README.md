@@ -70,7 +70,7 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 ```
 
-####3. 로컬 실행
+#### 3. 로컬 실행
 크롬 브라우저로 index.html을 직접 열거나, Live Server를 이용하거나, 다음 명령어로 로컬 서버를 실행합니다.
 ```bash
 npx serve public

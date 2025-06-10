@@ -36,8 +36,8 @@ Firebase를 기반으로 사용자 인증 및 데이터베이스를 관리하며
 #### 1. 프로젝트 다운로드
 (1) clone
 ```bash 
-git clone [저장소 주소] 
-
+ git clone [저장소 주소] 
+```
 (2) ZIP 파일 다운로드 후 압축 해제
 
 
@@ -51,6 +51,7 @@ Cloud Firestore > Database 생성
 프로젝트 설정 > 일반 > Firebase SDK 설정 정보 복사
 
 - firebase.js 예시
+```firebase.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -67,7 +68,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-
+```
 
 ####3. 로컬 실행
 크롬 브라우저로 index.html을 직접 열거나, Live Server를 이용하거나, 다음 명령어로 로컬 서버를 실행합니다.

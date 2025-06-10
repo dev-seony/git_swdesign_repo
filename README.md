@@ -72,8 +72,9 @@ export const db = getFirestore(app);
 
 ####3. 로컬 실행
 크롬 브라우저로 index.html을 직접 열거나, Live Server를 이용하거나, 다음 명령어로 로컬 서버를 실행합니다.
+```bash
 npx serve public
-
+```
 
 #### 관리자 계정 안내
 일부 기능(공지 작성, 회원 목록 조회 등)은 관리자 계정으로만 접근 가능합니다.
